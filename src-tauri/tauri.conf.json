@@ -30,6 +30,12 @@
     "longDescription": "Switch between Claude accounts from the system tray and track their usage limits.",
     "publisher": "volodya-korol",
     "copyright": "Copyright 2026 volodya-korol. Source available under FSL-1.1-MIT.",
-    "category": "DeveloperTool"
+    "category": "DeveloperTool",
+    "windows": {
+      "nsis": {
+        "installerIcon": "icons/icon.ico",
+        "displayLanguageSelector": false
+      }
+    }
   }
 }
