@@ -51,8 +51,16 @@ weekly bar, today's cost and a reset countdown.
 
 ## Install
 
-FlipOn is built and tested on **Windows 10 and 11**. Installers are not published yet:
-build it yourself (see [DEVELOPMENT.md](DEVELOPMENT.md)).
+Download **[FlipOn-Setup.exe](https://github.com/volodya-korol/flipon/releases/latest/download/FlipOn-Setup.exe)**
+from the [latest release](https://github.com/volodya-korol/flipon/releases/latest) and run it.
+FlipOn is built and tested on **Windows 10 and 11**. A portable `FlipOn.exe` is on the
+same page, and each release lists the SHA-256 of both files.
+
+The installer is not code signed yet, so Windows SmartScreen may warn you: choose
+**More info**, then **Run anyway**. For the same reason a few antivirus engines on
+VirusTotal can flag an unsigned new file as suspicious (machine learning guesses, not a
+named threat). The code is public, and you can build the files yourself, see
+[DEVELOPMENT.md](DEVELOPMENT.md).
 
 You need the [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) installed
 and logged in. FlipOn finds `claude` on its own; if it cannot, set the path in
@@ -97,7 +105,7 @@ Everything stays on your computer. There is no account and no server of ours.
 ## Known limits
 
 * Windows only for now (see above). Linux builds may work but are untested.
-* No automatic updates yet, and no signed installer.
+* No automatic updates yet, and no signed installer (see Install).
 * "Log in again" and automatic switching depend on how the CLI behaves; if Anthropic
   changes the login or usage format, FlipOn may need an update.
 
